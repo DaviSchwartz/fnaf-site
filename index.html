@@ -12,14 +12,15 @@
         </style>
     </head>
     <body>
-       <audio id="bgmusic" loop>
+      <audio id="bgmusic" loop>
     <source src="london.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-document.addEventListener("click", () => {
-    document.getElementById("bgmusic").play();
-}, { once: true });
+document.body.addEventListener("click", function() {
+    let audio = document.getElementById("bgmusic");
+    audio.play();
+});
 </script>
 
         <div class="Quantas almas estão presas ?  Talvez esse número seja importante no futuro.">
@@ -41,6 +42,7 @@ document.addEventListener("click", () => {
     </body>
 
 </html>
+
 
 
 
